@@ -1,0 +1,20 @@
+<!doctype html>
+
+<!--
+	HOW TO USE PYTHON INSTEAD OF JAVASCRIPT
+	USING brython.js BASICALLY INTERPRETS YOUR PYTHON CODE AS JAVASCRIPT
+-->
+
+<html>
+	<body onload='brython()'>
+		<script src="brython.js"></script>
+		<button id='hello_button'>Clck me!</button>button
+		<script type='text/python'>
+from browser import document, alert
+def hello(event):
+alert('Hello with Brython!')
+
+document['hello world'].bind('click', hello)
+		</script>
+	</body>
+</html>
