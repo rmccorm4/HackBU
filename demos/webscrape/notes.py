@@ -22,7 +22,7 @@ html = request.content
 
 soup = BeautifulSoup(html, "html.parser")
 
-dev=soup.find(class_="meaning")
+div=soup.find(class_="meaning")
 definition = div.text
 print(definition)
 
